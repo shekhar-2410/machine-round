@@ -1,11 +1,13 @@
-import logo from "./logo.svg";
+
 import "./App.css";
 import GoogleSeach from "./components/GoogleSeach";
+import EmployeDatabase from "./components/EmployeDatabase";
 
 function App() {
   return (
     <div className="App">
-      <GoogleSeach />
+      {/* <GoogleSeach /> */}
+      <EmployeDatabase />
     </div>
   );
 }
