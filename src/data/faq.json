@@ -1,0 +1,39 @@
+{
+  "faq": [
+    {
+      "id": "1",
+      "question": "What is Skyshare Cargo?",
+      "answer": "Skyshare Cargo is a comprehensive logistics solution offering a range of shipping services to meet your needs. Whether you're shipping locally or internationally, we provide efficient, reliable, and cost-effective services."
+    },
+    {
+      "id": "2",
+      "question": "How do I track my shipment?",
+      "answer": "You can track your shipment using our real-time notification system. Simply enter your air waybill number on our tracking page, and you'll receive instant updates on the status and location of your shipment."
+    },
+    {
+      "id": "3",
+      "question": "What are the accepted payment methods?",
+      "answer": "We accept a variety of payment methods including credit cards, PayPal, and bank transfers. For detailed information on payment methods, please visit our payment information page or contact our support team."
+    },
+    {
+      "id": "4",
+      "question": "How can I contact customer support?",
+      "answer": "Our customer support team is available 24/7 to assist you. You can contact us via phone, email, or through our live chat on the website. For more contact details, please visit our contact us page."
+    },
+    {
+      "id": "5",
+      "question": "What items are prohibited from shipping?",
+      "answer": "Certain items are prohibited from shipping due to safety and regulatory reasons. These include hazardous materials, explosives, and perishable goods. For a full list of prohibited items, please refer to our shipping policy."
+    },
+    {
+      "id": "6",
+      "question": "How do I estimate shipping costs?",
+      "answer": "You can estimate shipping costs by using our online calculator. Enter the weight, dimensions, and destination of your shipment to get an accurate cost estimate. For more details, visit our shipping cost estimator page."
+    },
+    {
+      "id": "7",
+      "question": "What should I do if my shipment is delayed?",
+      "answer": "If your shipment is delayed, please contact our customer support team for assistance. We will provide you with the latest information and work to resolve any issues causing the delay."
+    }
+  ]
+}
