@@ -1,4 +1,5 @@
 import "./App.css";
+import MultitepForm from "./components/MultitepForm";
 import ShoppingList from "./components/ShoppingList";
 // import Emical from "./components/Emical";
 // import ModalComponet from "./components/ModalComponet";
@@ -8,6 +9,7 @@ import ShoppingList from "./components/ShoppingList";
 // import FaqComponent from "./components/FaqComponent";
 // import Timer from "./components/Timer";
 // import Undoablecounter from "./components/Undoablecounter";
+
 
 function App() {
   return (
@@ -20,7 +22,8 @@ function App() {
       {/* <Emical /> */}
       {/* <ModalComponet /> */}
       {/* <Undoablecounter /> */}
-      <ShoppingList />
+      {/* <ShoppingList /> */}
+      <MultitepForm/>
     </div>
   );
 }
