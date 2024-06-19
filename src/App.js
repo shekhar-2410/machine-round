@@ -1,6 +1,7 @@
 import "./App.css";
 import MultitepForm from "./components/MultitepForm";
 import ShoppingList from "./components/ShoppingList";
+import Slider from "./components/Slider";
 // import Emical from "./components/Emical";
 // import ModalComponet from "./components/ModalComponet";
 // import GoogleSeach from "./components/GoogleSeach";
@@ -23,7 +24,8 @@ function App() {
       {/* <ModalComponet /> */}
       {/* <Undoablecounter /> */}
       {/* <ShoppingList /> */}
-      <MultitepForm/>
+      {/* <MultitepForm/> */}
+      <Slider/>
     </div>
   );
 }
