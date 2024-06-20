@@ -16,7 +16,7 @@ const Slider = () => {
     return item.url;
   });
   const lastIndex = image?.length - 1;
-  console.log(index, lastIndex);
+ 
   const baseUrl =
     "https://api.slingacademy.com/v1/sample-data/photos?offset=5&limit=20";
   const getImage = async () => {

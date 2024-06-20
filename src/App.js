@@ -1,7 +1,8 @@
 import "./App.css";
-import MultitepForm from "./components/MultitepForm";
-import ShoppingList from "./components/ShoppingList";
-import Slider from "./components/Slider";
+// import MultitepForm from "./components/MultitepForm";
+// import ShoppingList from "./components/ShoppingList";
+// import Slider from "./components/Slider";
+import Two_StepVerification from "./components/Two_StepVerification";
 // import Emical from "./components/Emical";
 // import ModalComponet from "./components/ModalComponet";
 // import GoogleSeach from "./components/GoogleSeach";
@@ -10,7 +11,6 @@ import Slider from "./components/Slider";
 // import FaqComponent from "./components/FaqComponent";
 // import Timer from "./components/Timer";
 // import Undoablecounter from "./components/Undoablecounter";
-
 
 function App() {
   return (
@@ -25,7 +25,8 @@ function App() {
       {/* <Undoablecounter /> */}
       {/* <ShoppingList /> */}
       {/* <MultitepForm/> */}
-      <Slider/>
+      {/* <Slider/> */}
+      <Two_StepVerification />
     </div>
   );
 }
