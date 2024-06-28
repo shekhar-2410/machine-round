@@ -1,5 +1,6 @@
 import "./App.css";
 import Calculator from "./components/Calculator";
+import StarRating from "./components/StarRating";
 // import AddressForm from "./components/UserLocation";
 // import MultitepForm from "./components/MultitepForm";
 // import ShoppingList from "./components/ShoppingList";
@@ -30,7 +31,8 @@ function App() {
       {/* <Slider/> */}
       {/* <Two_StepVerification /> */}
       {/* <AddressForm /> */}
-      <Calculator/>
+      {/* <Calculator/> */}
+      <StarRating/>
     </div>
   );
 }
