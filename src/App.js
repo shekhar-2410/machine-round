@@ -1,6 +1,10 @@
+import React , {useState} from "react";
 import "./App.css";
-import Calculator from "./components/Calculator";
-import StarRating from "./components/StarRating";
+import explorer from "./data/folder_d";
+import FolderData from "./components/FolderData";
+import Pagination from "./components/Pagination";
+// import Calculator from "./components/Calculator";
+// import StarRating from "./components/StarRating";
 // import AddressForm from "./components/UserLocation";
 // import MultitepForm from "./components/MultitepForm";
 // import ShoppingList from "./components/ShoppingList";
@@ -15,7 +19,9 @@ import StarRating from "./components/StarRating";
 // import Timer from "./components/Timer";
 // import Undoablecounter from "./components/Undoablecounter";
 
+
 function App() {
+  const [explorers, setExplorer] = useState(explorer);
   return (
     <div className="App">
       {/* <GoogleSeach /> */}
@@ -30,9 +36,11 @@ function App() {
       {/* <MultitepForm/> */}
       {/* <Slider/> */}
       {/* <Two_StepVerification /> */}
-      {/* <AddressForm /> */}
       {/* <Calculator/> */}
-      <StarRating/>
+      {/* <StarRating/> */}
+      {/* <FolderData explorer={explorers}/> */}
+      <Pagination/>
+      
     </div>
   );
 }
