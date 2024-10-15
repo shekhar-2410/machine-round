@@ -22,6 +22,7 @@ import ProgressBar from "./components/ProgressBar";
 // import Undoablecounter from "./components/Undoablecounter";
 // import GridComponent from "./components/Grid";
 import SortableTableWithGraphs from "./components/ReactTable";
+import Infinitecroll from "./components/Infinitecroll";
 
 function App() {
   const [explorers, setExplorer] = useState(explorer);
@@ -62,7 +63,8 @@ function App() {
        */}
       {/* <GridComponent />
        */}
-      <SortableTableWithGraphs />
+      {/* <SortableTableWithGraphs /> */}
+      <Infinitecroll/>
     </div>
   );
 }
