@@ -1,22 +1,26 @@
 import { Box, Image, Heading, Spinner } from "@chakra-ui/react";
 import React, { useState, useEffect } from "react";
 
-const Infinitecroll = () => {
+const InfiniteScroll = () => {
   const [data, setData] = useState([]);
   const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(true);
+
   const getData = async () => {
     try {
       const res = await fetch(
-        `https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=8&page=${page}&sparkline=false`
+        `https://picsum.photos/v2/list?page=${page}&limit=8`
       );
+      const newData = await res.json();
 
-      const data = await res.json();
-      if (data.length === 0) {
-        setLoading(false);
-        return;
-      }
-      setData((prev) => [...prev, ...data]);
+      // Filter out duplicate items based on their id
+      setData((prevData) => {
+        const newItems = newData.filter(
+          (item) => !prevData.some((prevItem) => prevItem.id === item.id)
+        );
+        return [...prevData, ...newItems];
+      });
+
       setLoading(false);
     } catch (err) {
       console.log(err);
@@ -33,6 +37,7 @@ const Infinitecroll = () => {
       setPage((prev) => prev + 1);
     }
   };
+
   useEffect(() => {
     getData();
   }, [page]);
@@ -40,10 +45,10 @@ const Infinitecroll = () => {
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [data]);
 
   return (
-    <Box background="black" width={"100%"} >
+    <Box background="black" width={"100%"}>
       <Heading py={"30px"} color={"yellow"}>
         Crypto Gallery
       </Heading>
@@ -54,14 +59,14 @@ const Infinitecroll = () => {
         alignItems="center"
         width="100%"
         padding={"10px"}
-        gap={"100px"}
+        gap={"40px"}
       >
         {data.length > 0 &&
           data.map((item) => (
             <Box
               key={item.id}
-              width={"15%"}
-              height={"200px"}
+              width={"300px"}
+              height={"fit-content"}
               padding={"10px"}
               borderRadius={"10px"}
               background={"white"}
@@ -74,9 +79,9 @@ const Infinitecroll = () => {
               }}
             >
               <>
-                <Image my={"10px"} mx={"auto"} src={item.image} width={"50%"} />
-                <h1>{item.name}</h1>
-                <p>{item.current_price}</p>
+                <Image loading="lazy" boxShadow={"lg"} borderRadius={"10px"} my={"10px"} mx={"auto"} src={item?.download_url} width={"90%"} height={"200px"} />
+                <h1>{item?.author}</h1>
+              
               </>
             </Box>
           ))}
@@ -86,4 +91,4 @@ const Infinitecroll = () => {
   );
 };
 
-export default Infinitecroll;
+export default InfiniteScroll;
