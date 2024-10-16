@@ -50,7 +50,7 @@ const InfiniteScroll = () => {
   return (
     <Box background="black" width={"100%"}>
       <Heading py={"30px"} color={"yellow"}>
-        Crypto Gallery
+        Infinite Scroll Gallery
       </Heading>
       <Box
         display={"flex"}
